@@ -1,7 +1,7 @@
 steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/paralov-com/private-wally-backend:$COMMIT_SHA', '-f', 'private-wally-registry-backend/Dockerfile', '.']
+    args: ['build', '-t', 'gcr.io/paralov-com/private-wally-backend:$COMMIT_SHA', '-f', 'wally-registry-backend/Dockerfile', '.']
 
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
