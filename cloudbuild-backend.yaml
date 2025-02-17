@@ -13,7 +13,7 @@ steps:
       [
         "run",
         "deploy",
-        "wally-backend",
+        "wally",
         "--image",
         "gcr.io/paralov-com/private-wally-backend:$COMMIT_SHA",
         "--region",
